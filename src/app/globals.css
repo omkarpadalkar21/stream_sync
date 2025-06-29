@@ -3,13 +3,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@layer utilities{
-  .flex-center{
+@layer utilities {
+  .flex-center {
     @apply flex justify-center items-center;
   }
 
-  .flex-between{
+  .flex-between {
     @apply flex justify-between items-center;
+  }
+
+  .bg-hero {
+    background-image: url("/images/hero-background.png");
   }
 }
 
@@ -52,6 +56,7 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+
 .glassmorphism2 {
   background: rgba(18, 17, 17, 0.25);
   backdrop-filter: blur(8px);
@@ -67,6 +72,7 @@
 .cl-logoBox {
   height: 40px;
 }
+
 .cl-dividerLine {
   background: #252a41;
   height: 2px;
@@ -79,6 +85,7 @@
 .cl-internal-wkkub3 {
   color: white;
 }
+
 .cl-userButtonPopoverActionButton {
   color: white;
 }
@@ -180,12 +187,18 @@
   --color-dark-1: #1c1f2e;
   --color-dark-2: #161925;
   --color-blue-1: #0e78f9;
+  --sky-1: #c9ddff;
+  --sky-2: #ecf0ff;
+  --sky-3: #f5fcff;
+  --orange-1: #ff742e;
+  --purple-1: #830ef9;
+  --yellow-1: #f9a90e;
 }
 
 .dark {
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
+  --card: oklch(0.074 0.051 264.052);
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.208 0.042 265.755);
   --popover-foreground: oklch(0.984 0.003 247.858);
@@ -220,6 +233,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
