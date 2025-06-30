@@ -57,7 +57,7 @@ const MeetingCard = ({
           </div>
         </div>
         {!isPreviousMeeting && (
-          <div className="flex gap-2 px-5">
+          <div className="flex gap-2 px-9">
             <Button
               onClick={handleClick}
               className="rounded bg-[var(--color-blue-1)] px-6"
