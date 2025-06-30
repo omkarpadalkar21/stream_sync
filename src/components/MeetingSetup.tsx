@@ -1,12 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 import {
   DeviceSettings,
   useCall,
   VideoPreview,
 } from "@stream-io/video-react-sdk";
-import Loader from "@/components/Loader";
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const MeetingSetup = ({
   setIsSetupComplete,

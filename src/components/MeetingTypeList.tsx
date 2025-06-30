@@ -1,15 +1,14 @@
 "use client";
-import Image from "next/image";
 import HomeCard from "@/components/HomeCard";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 import MeetingModal from "@/components/MeetingModal";
-import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
 import { useUser } from "@clerk/nextjs";
-import { toast } from "sonner";
-import { Textarea } from "./ui/textarea";
+import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import ReactDatePicker from "react-datepicker";
+import { toast } from "sonner";
 import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 const MeetingTypeList = () => {
   const router = useRouter();
   const [meetingState, setMeetingState] = useState<
@@ -52,7 +51,7 @@ const MeetingTypeList = () => {
         router.push(`/meeting/${call.id}`);
       }
       toast.success("Meeting successfully created!");
-    } catch (error) {
+    } catch {
       toast.error("Failed to create meeting");
     }
   };
