@@ -60,7 +60,7 @@ const MeetingModal = ({
           >
             {buttonIcon && (
               <Image
-                src={buttonText as string}
+                src={buttonIcon}
                 alt={"button-icon"}
                 width={13}
                 height={13}

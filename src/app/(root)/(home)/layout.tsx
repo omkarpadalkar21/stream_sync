@@ -1,5 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "StreamSync",
+  description:
+    "A platform for seamless video meetings and real-time collaboration.",
+  icons: {
+    icon: "/icons/Logo.svg",
+  },
+};
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (

@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import {Toaster} from "@/components/ui/sonner"
-
+import { Toaster } from "@/components/ui/sonner";
+import "@stream-io/video-react-sdk/dist/css/styles.css";
+import "react-datepicker/dist/react-datepicker.css";
 const inter = Inter({
   subsets: ["latin"],
 });
@@ -12,6 +13,9 @@ export const metadata: Metadata = {
   title: "StreamSync",
   description:
     "A platform for seamless video meetings and real-time collaboration.",
+  icons: {
+    icon: "/icons/Logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -19,7 +23,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <ClerkProvider
@@ -42,7 +45,7 @@ export default function RootLayout({
           className={`${inter.className} bg-[var(--color-dark-2)] antialiased`}
         >
           {children}
-        <Toaster/>
+          <Toaster />
         </body>
       </ClerkProvider>
     </html>
