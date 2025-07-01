@@ -18,22 +18,22 @@ A collaborative video meeting and scheduling platform built with Next.js. Stream
 
 ## Screenshots
 
-### Home Page: Create or join meetings
+##### Home Page: Create or join meetings
 ![image](https://github.com/user-attachments/assets/a44e3340-b7db-4bc3-8d5a-f7376c5459e8)
 
-### Schedule Meetings
+##### Schedule Meetings
 ![image](https://github.com/user-attachments/assets/c85b9b43-f1fc-4c04-adab-b1580ae5c0fe)
 
-### Check upcoming meetings
+##### Check upcoming meetings
 ![image](https://github.com/user-attachments/assets/f210141f-c702-49ae-84a3-b9bc619ed401)
 
-### Check previous meetings
+##### Check previous meetings
 ![image](https://github.com/user-attachments/assets/6f5ae0b0-5b42-4341-a9a6-d81b8979ed64)
 
-### Check recordings
+##### Check recordings
 ![image](https://github.com/user-attachments/assets/089e464b-2f7f-420d-9efa-708515cf56c2)
 
-### Mobile View
+##### Mobile View
 ![image](https://github.com/user-attachments/assets/ea9e8e38-a367-4bca-ad0f-23cbe308f80d)
 
 ## Getting Started
