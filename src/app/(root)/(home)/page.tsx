@@ -1,10 +1,11 @@
+"use client";
 import React from "react";
 import MeetingTypeList from "@/components/MeetingTypeList";
 
 const Home = () => {
   const now = new Date();
   const date = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-    now,
+    now
   );
   const time = now.toLocaleTimeString("en-US", {
     hour: "2-digit",
