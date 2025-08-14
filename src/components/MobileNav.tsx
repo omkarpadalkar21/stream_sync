@@ -38,7 +38,7 @@ const MobileNav = () => {
               <VisuallyHidden>Mobile Navigation</VisuallyHidden>
             </SheetTitle>
           </SheetHeader>
-          <Link href={"/"} className={"flex items-center gap-1"}>
+          <Link href={"/"} className={"flex items-center gap-1"} prefetch>
             <Image
               src={"/icons/Logo.svg"}
               alt={"Stream Sync Logo"}
