@@ -11,7 +11,7 @@ const Navbar = () => {
         "flex flex-between fixed z-50 w-full bg-[var(--color-dark-1)] px-4 py-3 sm:px-6 sm:py-4 lg:px-10"
       }
     >
-      <Link href={"/"} className={"flex items-center gap-1"}>
+      <Link href={"/"} className={"flex items-center gap-1"} prefetch>
         <Image
           src={"/icons/Logo.svg"}
           alt={"Stream Sync Logo"}
